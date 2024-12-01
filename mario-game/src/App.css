@@ -1,0 +1,46 @@
+/* Game container */
+.game-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Start button */
+.start-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #218838;
+}
+
+/* Holes container */
+.holes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Individual hole */
+.hole {
+  width: 100px;
+  height: 100px;
+  background-color: #654321;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* Mole appearance */
+.hole.mole {
+  background-color: #ff6347; /* Mole is red */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
